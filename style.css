@@ -1,0 +1,23 @@
+#game {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    --width: 16px;
+    --height: 9px;
+    --scaling: 4;
+}
+
+#button {
+    border-radius: 4px;
+    box-shadow: calc(var(--scaling) * 0.5px) calc(var(--scaling) * 0.5px) calc(var(--scaling) * 1.25px) rgba(0, 0, 0, 0.5);
+    width: calc(var(--width) * var(--scaling));
+    height: calc(var(--height) * var(--scaling));
+    outline: none;
+    border: none;
+    font-size: 100%;
+}
+
+#button:active {
+    box-shadow: inset calc(var(--scaling) * 1.25px) calc(var(--scaling) * 1.25px) calc(var(--scaling) * 2px) rgba(0, 0, 0, 0.5);
+}
