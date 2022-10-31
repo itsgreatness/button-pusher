@@ -11,6 +11,6 @@ onmessage = function (e) {
     if (!isFinite(responseIndex))
         return;
     response = (_a = storyboard[responseIndex]) !== null && _a !== void 0 ? _a : storyboard[storyboard.length - 1];
-    postMessage([response, 4 + clicks * 2]);
+    postMessage([response, 4 + clicks / 4]);
     console.log("Worker posted message");
 };
