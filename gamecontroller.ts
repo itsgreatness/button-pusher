@@ -10,6 +10,6 @@ onmessage = function (e) {
     const responseIndex = Math.floor(Math.log(clicks) / Math.log(2))
     if (!isFinite(responseIndex)) return;
     response = storyboard[responseIndex] ?? storyboard[storyboard.length - 1];
-    postMessage([response, 4 + clicks * 2]);
+    postMessage([response, 4 + clicks / 4]);
     console.log("Worker posted message");
 }
